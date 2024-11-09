@@ -1,5 +1,5 @@
 #Decision Tree Classifier
-#Import necessary libraries
+
 from sklearn.tree import DecisionTreeClassifier,plot_tree
 from sklearn.metrics import accuracy_score,classification_report,confusion_matrix
 from sklearn.model_selection import train_test_split
