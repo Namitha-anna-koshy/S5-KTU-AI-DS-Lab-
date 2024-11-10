@@ -20,9 +20,10 @@ print(f'Covariance :{np.cov(x,y)[0,1]:.3f}')
 plt.scatter(x_test,y_test,color='red',label='Actual data')
 plt.plot(x_test,y_pred,color='black',label='Linear Regression')
 plt.xlabel("Height")
-plt.ylabel('Weight'
-plt.title("Simple Linear Regression"))
+plt.ylabel('Weight')
+plt.title("Simple Linear Regression")
 plt.legend()#to increase the clarity and readability
 plt.show()
+
 
 
