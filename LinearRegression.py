@@ -12,7 +12,7 @@ y=df[' Weight (Pounds)']
 
 x_train,x_test,y_train,y_test=train_test_split(x,y,test_size=0.2,random_state=42)
 
-slope,intercept,r_value,p_value,std_err=linregress(x_test,y_test)
+slope,intercept,r_value,p_value,std_err=linregress(x_train,y_train)
 y_pred=slope*x_test+intercept
 
 print(f'Covariance :{np.cov(x,y)[0,1]:.3f}')
