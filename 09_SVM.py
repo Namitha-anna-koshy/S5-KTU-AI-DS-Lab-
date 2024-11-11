@@ -6,7 +6,7 @@ from sklearn.svm import SVC
 import pandas as pd
 import matplotlib.pyplot as plt
 
-df=pd.read_csv("HeartDisease.csv")
+df=pd.read_csv("09_HeartDisease.csv")
 x=df[['cp','trestbps','chol','fbs']]
 y=df['target']
 x_train, x_test, y_train, y_test = train_test_split(x, y, test_size=0.2, random_state=42)
