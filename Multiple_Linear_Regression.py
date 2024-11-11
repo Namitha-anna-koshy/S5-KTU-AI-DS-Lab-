@@ -1,5 +1,3 @@
-import matplotlib.pyplot as plt
-from mpl_toolkits.mplot3d import Axes3D
 from sklearn.model_selection import train_test_split
 from sklearn.linear_model import LinearRegression
 import pandas as pd
@@ -21,13 +19,3 @@ intercept = model.intercept_
 equation = f"y = {intercept:.2f} + {coefficients[0]:.2f}*Feature1 + {coefficients[1]:.2f}*Feature2"
 print("Equation of the model:")
 print(equation)
-
-fig = plt.figure(figsize=(12, 8))
-ax = fig.add_subplot(111, projection='3d')
-ax.scatter(x_test['Feature1'], x_test['Feature2'], y_test, color='green', label='Actual')
-ax.scatter(x_test['Feature1'], x_test['Feature2'], y_pred, color='red', label='Predicted')
-ax.set_xlabel('Feature1')
-ax.set_ylabel('Feature2')
-ax.set_zlabel('Target')
-ax.set_title('Multiple Linear Regression')
-plt.show()
